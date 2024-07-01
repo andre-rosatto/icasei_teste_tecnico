@@ -1,0 +1,61 @@
+:host(mf-drawer) ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+:host(mf-drawer) ul li {
+	width: 100%;
+	height: 40px;
+	border: 1px solid rgb(224, 224, 224);
+	transition: all 0.15s linear 0s;
+	border-radius: 4px;
+}
+
+:host(mf-drawer) a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+	color: rgb(117, 117, 117);
+	font-size: 1.4rem;
+	width: 100%;
+	height: 100%;
+	padding: 8px 16px;
+	box-sizing: border-box;
+	transition: all 0.15s linear 0s;
+}
+
+:host(mf-drawer) #favorite-count {
+	background-color: rgb(144, 202, 249);
+	padding: 4px;
+	border-radius: 100px;
+	width: 15px;
+	text-align: center;
+	color: white;
+	font-size: 1.2rem;
+	transform: translateX(10px);
+	transition: all 0.15s linear 0s;
+}
+
+:host(mf-drawer) ul li:hover,
+:host(mf-drawer) ul li.selected {
+	border-color: rgb(33, 33, 33);
+}
+
+:host(mf-drawer) ul li:hover a,
+:host(mf-drawer) ul li.selected a {
+	color: rgb(33, 33, 33);
+}
+
+:host(mf-drawer) ul li:hover #favorite-count,
+:host(mf-drawer) ul li.selected #favorite-count {
+	background-color: rgb(100, 181, 246);
+}
+
+:host(mf-drawer) ul li.selected {
+	pointer-events: none;
+}
