@@ -5,15 +5,15 @@ const PORT = '3000';
 
 app.use(express.static(__dirname + '/src'));
 
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
 	res.sendFile((__dirname + '/src/videos.html'));
 });
 
-app.get('/videos', (req, res) => {
+app.get('/videos', (_, res) => {
 	res.sendFile((__dirname + '/src/videos.html'));
 });
 
-app.get('/favoritos', (req, res) => {
+app.get('/favoritos', (_, res) => {
 	res.sendFile((__dirname + '/src/favorites.html'));
 });
 
