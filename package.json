@@ -4,10 +4,10 @@
   "description": "Teste técnico desenvolvido para o site iCasei",
   "scripts": {
     "start": "node server.js",
-		"build": "npx webpack",
-		"docker:build": "docker build -t icasei .",
-		"docker:run": "docker run -it -d -p 80:80 icasei",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx webpack",
+    "docker:build": "docker build -t icasei .",
+    "docker:run": "docker run -it -d -p 80:80 icasei",
+    "test": "vitest"
   },
   "author": "André Rosatto",
   "license": "ISC",
