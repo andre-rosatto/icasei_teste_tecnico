@@ -16,5 +16,4 @@ Faz a build no diretório "dist"
 Cria a imagem do docker
 
 ### npm run docker:run
-Inicia o container do docker
-Site acessível em localhost/index.html
+Inicia o container do docker (site acessível em localhost/index.html)
