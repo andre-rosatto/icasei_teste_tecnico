@@ -8,3 +8,6 @@ escopo: https://github.com/icasei/teste-front-end-2024
 
 ### npm start
 Inicia o servidor (localhost:3000)
+
+### npm run build
+Faz a build no diretório "dist"

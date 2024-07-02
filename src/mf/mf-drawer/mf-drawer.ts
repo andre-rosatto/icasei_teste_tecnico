@@ -33,7 +33,7 @@ class MFDrawer extends HTMLElement {
 			<style>@import url('./mf/mf-drawer/mf-drawer.css');</style>
 			<ul>
 				<li id="videos-link" ${selected === 'videos' ? 'class="selected"' : null}>
-					<a href="${selected === 'videos' ? 'javascript:void(0)' : '/'}">Vídeos</a>
+					<a href="${selected === 'videos' ? 'javascript:void(0)' : '/videos.html'}">Vídeos</a>
 				</li>
 				<li id="favorites-link" ${selected === 'favorites' ? 'class="selected"' : null}>
 					<a href="${selected === 'favorites' ? 'javascript:void(0)' : '/favorites.html'}">
