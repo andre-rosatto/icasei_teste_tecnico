@@ -19,8 +19,8 @@ module.exports = {
 			filename: './mf/mf-videos/mf-videos.css'
 		}),
 		new HtmlWebpackPlugin({
-			filename: 'videos.html',
-			template: './src/videos.html'
+			filename: 'index.html',
+			template: './src/index.html'
 		}),
 		new HtmlWebpackPlugin({
 			filename: 'favorites.html',

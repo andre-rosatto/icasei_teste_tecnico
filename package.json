@@ -5,6 +5,8 @@
   "scripts": {
     "start": "node server.js",
 		"build": "npx webpack",
+		"docker:build": "docker build -t icasei .",
+		"docker:run": "docker run -it -d -p 80:80 icasei",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "André Rosatto",
