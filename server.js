@@ -6,11 +6,11 @@ const PORT = '3000';
 app.use(express.static(__dirname + '/src'));
 
 app.get('/', (_, res) => {
-	res.sendFile((__dirname + '/src/videos.html'));
+	res.sendFile((__dirname + '/src/index.html'));
 });
 
 app.get('/videos', (_, res) => {
-	res.sendFile((__dirname + '/src/videos.html'));
+	res.sendFile((__dirname + '/src/index.html'));
 });
 
 app.get('/favoritos', (_, res) => {
